@@ -1,0 +1,20 @@
+# Função para trocar os valores de duas variáveis
+def trocar(a, b):
+    # Troca os valores usando um terceiro temporário
+    temp = a
+    a = b
+    b = temp
+    return a, b
+
+# Valores iniciais
+x = 10
+y = 20
+
+# Exibe os valores antes da troca
+print(f"Antes da troca: x = {x}, y = {y}")
+
+# Chama a função para trocar os valores
+x, y = trocar(x, y)
+
+# Exibe os valores após a troca
+print(f"Depois da troca: x = {x}, y = {y}")
